@@ -1,0 +1,136 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 240px;
+}
+
+.hero__description {
+  width: 43%;
+}
+
+.hero__description-logo {
+  margin-bottom: 22px;
+  width: 67px;
+  height: 20px;
+}
+
+.hero__description-title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+}
+
+.hero__description-text {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.hero__request {
+  width: 37%;
+}
+
+.hero__request-text {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 4px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+
+  .hero__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #191919;
+    background-image: url("../img/hero-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+  }
+
+  .hero__description-logo {
+    padding-top: 25px;
+    padding-left: 20px;
+    margin-bottom: 80px;
+  }
+
+  .hero__description-logo-link {
+    align-self: flex-start;
+  }
+
+  .hero__description-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .hero__description-text {
+    width: 56%;
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .hero__request {
+    width: 42%;
+    padding-top: 66px;
+  }
+
+  .hero__request-text {
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .hero__description-text,
+  .hero__description-title {
+    width: 90%;
+  }
+
+  .hero__description {
+    background-image: url("../img/hero-mobile.jpg");
+  }
+
+  .hero__description-text {
+    margin-bottom: 70px;
+  }
+
+  .hero__description-logo {
+    padding-left: 17px;
+    margin-bottom: 66px;
+  }
+
+  .hero__request {
+    width: 90%;
+  }
+
+  .hero__request-text {
+    margin-bottom: 20px;
+  }
+}

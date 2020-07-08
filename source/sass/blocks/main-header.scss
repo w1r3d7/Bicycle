@@ -1,0 +1,39 @@
+.main-header {
+  background-color: #191919;
+  background-image: url("../img/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-desktop@2x.jpg");
+  }
+}
+
+.main-header__wrapper {
+  width: 61%;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.main-header__nav {
+  padding-top: 17px;
+  margin-bottom: 256px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .main-header {
+    background: none;
+  }
+
+  .main-header__wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main-header__nav {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}

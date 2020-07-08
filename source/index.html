@@ -12,12 +12,43 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header></header>
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <nav class="main-header__nav nav nav--nojs nav--closed">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть\Закрыть меню</span></button>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">О нас</a></li>
+          <li class="nav__item"><a href="#bicycle-types">Виды велосипедов</a></li>
+          <li class="nav__item"><a href="#bicycle-video">Видео про велосипеды</a></li>
+          <li class="nav__item"><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="main-header__hero hero">
+        <section class="hero__description">
+          <a class="hero__description-logo-link"><img class="hero__description-logo" src="img/logo.svg" width="67" height="20" alt="Логотип компании"></a>
+          <h1 class="hero__description-title">Мы продаем велосипеды</h1>
+          <p class="hero__description-text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </section>
+        <section class="hero__request">
+          <h2 class="visually-hidden">Форма для отправки запроса по подбору велосипеда</h2>
+          <p class="hero__request-text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form class="hero__request-form form">
+            <label for="first-name"><span class="visually-hidden">Поле для ввода имени</span></label>
+            <input class="form__input" id="first-name" type="text" name="first-name" placeholder="Введите Ваше Имя" required>
+            <label for="phone"><span class="visually-hidden">Поле для ввода телефона</span></label>
+            <input class="form__input" id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" required>
+            <button class="form__button" type="submit">Подобрать велосипед мечты</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </header>
   <div style="display:none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
   <main>
 
   </main>
+  <script src="js/script.js"></script>
 </body>
 </html>

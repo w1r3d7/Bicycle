@@ -1,3 +1,9 @@
 @import "system/normalize.scss";
+@import "system/mixins.scss";
+@import "system/variables.scss";
 @import "system/fonts.scss";
 @import "system/scaffolding.scss";
+@import "blocks/main-header.scss";
+@import "blocks/nav.scss";
+@import "blocks/hero.scss";
+@import "blocks/form.scss";
