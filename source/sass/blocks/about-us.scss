@@ -1,0 +1,41 @@
+.about-us {
+  max-width: 1166px;
+  margin: 0 auto;
+  padding: 0 4%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+
+@media (max-width: $tablet-width) {
+  .about-us {
+    padding-top: 72px;
+    padding-right: 12%;
+    padding-left: 12%;
+  }
+
+  .about-us__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .about-us {
+    padding-right: 5%;
+    padding-left: 4%;
+  }
+}
