@@ -1,0 +1,37 @@
+.page-main__about-us {
+  max-width: 1166px;
+  margin: 0 auto;
+  padding: 0 4%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.page-main__bicycle-types {
+  padding-bottom: 150px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .page-main__about-us {
+    padding-top: 72px;
+    padding-right: 12%;
+    padding-left: 12%;
+    padding-bottom: 26px;
+  }
+
+  .page-main__bicycle-types {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-main__about-us {
+    padding-right: 5%;
+    padding-left: 4%;
+    padding-bottom: 38px;
+  }
+
+  .page-main__bicycle-types {
+    padding-bottom: 54px;
+  }
+}
