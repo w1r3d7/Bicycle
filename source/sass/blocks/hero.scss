@@ -70,6 +70,10 @@
     background-size: cover;
     background-position: center top;
     text-align: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   .hero__description-logo {
@@ -115,6 +119,10 @@
 
   .hero__description {
     background-image: url("../img/hero-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
   }
 
   .hero__description-text {

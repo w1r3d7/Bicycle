@@ -56,11 +56,11 @@
 }
 
 .bicycle-types__item--mountain .bicycle-types__image-wrapper::before {
-  left: -15px;
-  top: -15px;
-  width: 37px;
-  height: 37px;
-  background-color: #131314;
+  left: -22px;
+  top: -22px;
+  width: 47px;
+  height: 47px;
+  border: 8px solid $main-color;
   z-index: 3;
 }
 
@@ -88,6 +88,7 @@
 
 .bicycle-types__image {
   position: relative;
+  width: 100%;
   z-index: 1;
   border-radius: 10px;
 }
@@ -134,6 +135,10 @@
     object-fit: cover;
     width: 270px;
     height: 300px;
+  }
+
+  .bicycle-types__image--poly {
+    font-family: "object-fit: cover";
   }
 
   .bicycle-types__item--mountain {
