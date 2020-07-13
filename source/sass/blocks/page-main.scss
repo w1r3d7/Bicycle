@@ -10,6 +10,10 @@
   padding-bottom: 150px;
 }
 
+.page-main__bicycle-video {
+  margin-bottom: 142px;
+}
+
 
 @media (max-width: $tablet-width) {
   .page-main__about-us {
@@ -21,6 +25,10 @@
 
   .page-main__bicycle-types {
     padding-bottom: 70px;
+  }
+
+  .page-main__bicycle-video {
+    margin-bottom: 62px;
   }
 }
 
