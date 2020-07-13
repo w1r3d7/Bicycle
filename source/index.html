@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div style="display:none">
-    <include src="build/img/sprite_auto.svg"></include>
-  </div>
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__nav nav nav--nojs nav--closed">
@@ -39,7 +36,7 @@
             <label for="first-name"><span class="visually-hidden">Поле для ввода имени</span></label>
             <input class="form__input" id="first-name" type="text" name="first-name" placeholder="Введите Ваше Имя" required>
             <label for="phone"><span class="visually-hidden">Поле для ввода телефона</span></label>
-            <input class="form__input" id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" required>
+            <input class="form__input" id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="\d*" title="Только цифры" required>
             <button class="form__button" type="submit">Подобрать велосипед мечты</button>
           </form>
         </section>
@@ -76,6 +73,7 @@
           <div class="bicycle-types__image-wrapper">
             <picture>
               <source srcset="img/bicycle-road.webp 1x, img/bicycle-road@2x.webp 2x" type="image/webp">
+              <!-- 1х: 342px; 2x: 684px -->
               <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="503" src="img/bicycle-road.jpg" srcset="img/bicycle-road@2x.jpg 2x" alt="Дорожные велосипеды">
             </picture>
           </div>
@@ -85,7 +83,8 @@
           <div class="bicycle-types__image-wrapper">
             <picture>
               <source srcset="img/bicycle-mountain.webp 1x, img/bicycle-mountain@2x.webp 2x" type="image/webp">
-              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="566" src="img/bicycle-mountain.jpg" srcset="img/bicycle-mountain@2x.jpg 2x" alt="Дорожные велосипеды">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="566" src="img/bicycle-mountain.jpg" srcset="img/bicycle-mountain@2x.jpg 2x" alt="Горные велосипеды">
             </picture>
           </div>
           <p class="bicycle-types__item-description">Горный велосипед</p>
@@ -94,7 +93,8 @@
           <div class="bicycle-types__image-wrapper">
             <picture>
               <source srcset="img/bicycle-childrens.webp 1x, img/bicycle-childrens@2x.webp 2x" type="image/webp">
-              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="512" src="img/bicycle-childrens.jpg" srcset="img/bicycle-childrens@2x.jpg 2x" alt="Дорожные велосипеды">
+              <!-- 1х: 342px; 2x: 684px -->
+              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="512" src="img/bicycle-childrens.jpg" srcset="img/bicycle-childrens@2x.jpg 2x" alt="Детские велосипеды">
             </picture>
           </div>
           <p class="bicycle-types__item-description">Детский велосипед</p>
@@ -109,6 +109,7 @@
         <button class="bicycle-video__player-button" type="button"><span class="visually-hidden">Начать просмотр</span></button>
         <picture>
           <source srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" type="image/webp">
+          <!-- 1х: 929px; 2x: 1858px -->
           <img class="bicycle-video__player-image" width="929" height="522" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg 2x" alt="Видео про велосипеды">
         </picture>
       </div>
@@ -122,7 +123,8 @@
         <a href="https://yandex.ru/maps/-/CCQleKUo2B">
           <picture>
             <source srcset="img/map.webp 1x, img/map@2x.webp 2x" type="image/webp">
-            <img class="contacts__map-image" width="957" height="530" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Дорожные велосипеды">
+            <!-- 1х: 957px; 2x: 1914px -->
+            <img class="contacts__map-image" width="957" height="530" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Карта как нас найти">
           </picture>
         </a>
         <div class="contacts__map-yandex" id="map"></div>

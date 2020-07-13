@@ -1,15 +1,31 @@
 'use strict';
-var mainNav = document.querySelector('.nav');
-var headerToggle = mainNav.querySelector('.nav__toggle');
+(function () {
+  var mainNav = document.querySelector('.nav');
+  var headerToggle = mainNav.querySelector('.nav__toggle');
 
-mainNav.classList.remove('nav--nojs');
+  var navList = mainNav.querySelector('.nav__list');
+  var navLinks = navList.querySelectorAll('a');
 
-headerToggle.addEventListener('click', function () {
-  if (mainNav.classList.contains('nav--closed')) {
-    mainNav.classList.remove('nav--closed');
-    mainNav.classList.add('nav--opened');
-  } else {
-    mainNav.classList.add('nav--closed');
-    mainNav.classList.remove('nav--opened');
-  }
-});
+  var replaceClasses = function (element, addClass, removeClass) {
+    element.classList.add(addClass);
+    element.classList.remove(removeClass);
+  };
+
+  navLinks.forEach(function (it) {
+    it.addEventListener('click', function () {
+      if (mainNav.classList.contains('nav--opened')) {
+        replaceClasses(mainNav, 'nav--closed', 'nav--opened');
+      }
+    });
+  });
+
+  mainNav.classList.remove('nav--nojs');
+
+  headerToggle.addEventListener('click', function () {
+    if (mainNav.classList.contains('nav--closed')) {
+      replaceClasses(mainNav, 'nav--opened', 'nav--closed');
+    } else {
+      replaceClasses(mainNav, 'nav--closed', 'nav--opened');
+    }
+  });
+})();
