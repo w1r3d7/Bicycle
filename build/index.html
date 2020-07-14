@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Сайт о велосипедах">
   <title>Велосипеды</title>
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -34,10 +35,10 @@
           <p class="hero__request-text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form class="hero__request-form form">
             <label for="first-name"><span class="visually-hidden">Поле для ввода имени</span></label>
-            <input class="form__input" id="first-name" type="text" name="first-name" placeholder="Введите Ваше Имя" required="">
+            <input id="first-name" type="text" name="first-name" placeholder="Введите Ваше Имя" required="">
             <label for="phone"><span class="visually-hidden">Поле для ввода телефона</span></label>
-            <input class="form__input" id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="\d*" title="Только цифры" required="">
-            <button class="form__button" type="submit">Подобрать велосипед мечты</button>
+            <input id="phone" type="tel" name="phone" placeholder="Введите Ваш номер телефона" pattern="\d*" title="Только цифры" required="">
+            <button type="submit">Подобрать велосипед мечты</button>
           </form>
         </section>
       </div>
@@ -72,9 +73,9 @@
         <li class="bicycle-types__item bicycle-types__item--road">
           <div class="bicycle-types__image-wrapper">
             <picture>
-              <source srcset="img/bicycle-road.webp 1x, img/bicycle-road@2x.webp 2x" type="image/webp">
+              <source data-srcset="img/bicycle-road.webp 1x, img/bicycle-road@2x.webp 2x" type="image/webp">
               <!-- 1х: 342px; 2x: 684px -->
-              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="503" src="img/bicycle-road.jpg" srcset="img/bicycle-road@2x.jpg 2x" alt="Дорожные велосипеды">
+              <img class="bicycle-types__image bicycle-types__image--poly lazyload" width="342" height="503" data-src="img/bicycle-road.jpg" loading="lazy" data-srcset="img/bicycle-road@2x.jpg 2x" alt="Дорожные велосипеды">
             </picture>
           </div>
           <p class="bicycle-types__item-description">Дорожный велосипед</p>
@@ -82,9 +83,9 @@
         <li class="bicycle-types__item bicycle-types__item--mountain">
           <div class="bicycle-types__image-wrapper">
             <picture>
-              <source srcset="img/bicycle-mountain.webp 1x, img/bicycle-mountain@2x.webp 2x" type="image/webp">
+              <source data-srcset="img/bicycle-mountain.webp 1x, img/bicycle-mountain@2x.webp 2x" type="image/webp">
               <!-- 1х: 342px; 2x: 684px -->
-              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="566" src="img/bicycle-mountain.jpg" srcset="img/bicycle-mountain@2x.jpg 2x" alt="Горные велосипеды">
+              <img class="bicycle-types__image bicycle-types__image--poly lazyload" width="342" height="566" data-src="img/bicycle-mountain.jpg" loading="lazy" data-srcset="img/bicycle-mountain@2x.jpg 2x" alt="Горные велосипеды">
             </picture>
           </div>
           <p class="bicycle-types__item-description">Горный велосипед</p>
@@ -92,9 +93,9 @@
         <li class="bicycle-types__item bicycle-types__item--childrens">
           <div class="bicycle-types__image-wrapper">
             <picture>
-              <source srcset="img/bicycle-childrens.webp 1x, img/bicycle-childrens@2x.webp 2x" type="image/webp">
+              <source data-srcset="img/bicycle-childrens.webp 1x, img/bicycle-childrens@2x.webp 2x" type="image/webp">
               <!-- 1х: 342px; 2x: 684px -->
-              <img class="bicycle-types__image bicycle-types__image--poly" width="342" height="512" src="img/bicycle-childrens.jpg" srcset="img/bicycle-childrens@2x.jpg 2x" alt="Детские велосипеды">
+              <img class="bicycle-types__image bicycle-types__image--poly lazyload" width="342" height="512" data-src="img/bicycle-childrens.jpg" loading="lazy" data-srcset="img/bicycle-childrens@2x.jpg 2x" alt="Детские велосипеды">
             </picture>
           </div>
           <p class="bicycle-types__item-description">Детский велосипед</p>
@@ -108,9 +109,9 @@
       <div class="bicycle-video__player">
         <button class="bicycle-video__player-button" type="button"><span class="visually-hidden">Начать просмотр</span></button>
         <picture>
-          <source srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" type="image/webp">
+          <source data-srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" type="image/webp">
           <!-- 1х: 929px; 2x: 1858px -->
-          <img class="bicycle-video__player-image" width="929" height="522" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg 2x" alt="Видео про велосипеды">
+          <img class="bicycle-video__player-image lazyload" width="929" height="522" data-src="img/video-preview.jpg" data-srcset="img/video-preview@2x.jpg 2x" loading="lazy" alt="Видео про велосипеды">
         </picture>
       </div>
     </section>
@@ -122,12 +123,12 @@
       <div class="contacts__map">
         <a href="https://yandex.ru/maps/-/CCQleKUo2B">
           <picture>
-            <source srcset="img/map.webp 1x, img/map@2x.webp 2x" type="image/webp">
+            <source data-srcset="img/map.webp 1x, img/map@2x.webp 2x" type="image/webp">
             <!-- 1х: 957px; 2x: 1914px -->
-            <img class="contacts__map-image" width="957" height="530" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Карта как нас найти">
+            <img class="contacts__map-image lazyload" width="957" height="530" data-src="img/map.jpg" data-srcset="img/map@2x.jpg 2x" loading="lazy" alt="Карта как нас найти">
           </picture>
         </a>
-        <div class="contacts__map-yandex" id="map"></div>
+        <div class="contacts__map-yandex" id="map" aria-label="Интерактивная карта"></div>
       </div>
       <div class="contacts__links">
         <a class="contacts__links-item contacts__links-item--mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
@@ -135,9 +136,8 @@
       </div>
     </section>
   </footer>
-  <script src="js/script.js"></script>
-  <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e075df4fda2360f45cf3178b7734a6773acf8c6be99c6dbb71bec37919d100a&amp;width=100%25&amp;id=map&amp;lang=ru_RU&amp;scroll=true"></script>
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/objectfitfill.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3e075df4fda2360f45cf3178b7734a6773acf8c6be99c6dbb71bec37919d100a&amp;width=100%25&amp;id=map&amp;lang=ru_RU&amp;scroll=true"></script>
+  <script src="js/vendor.js"></script>
 </body>
 </html>

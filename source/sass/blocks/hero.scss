@@ -8,8 +8,12 @@
   width: 43%;
 }
 
+.hero__description-logo-link {
+  display: block;
+  margin-bottom: 17px;
+}
+
 .hero__description-logo {
-  margin-bottom: 22px;
   width: 67px;
   height: 20px;
 }
@@ -79,10 +83,10 @@
   .hero__description-logo {
     padding-top: 25px;
     padding-left: 20px;
-    margin-bottom: 80px;
   }
 
   .hero__description-logo-link {
+    margin-bottom: 80px;
     align-self: flex-start;
   }
 
@@ -129,9 +133,12 @@
     margin-bottom: 70px;
   }
 
+  .hero__description-logo-link {
+    margin-bottom: 66px;
+  }
+
   .hero__description-logo {
     padding-left: 17px;
-    margin-bottom: 66px;
   }
 
   .hero__request {
