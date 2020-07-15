@@ -442,18 +442,23 @@ input[type="radio"].visually-hidden {
     display: block;
     position: absolute;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffffff;
     z-index: 2; }
   .nav--opened .nav__toggle {
     background-color: #ffffff;
     background-image: url("../img/icon-menu-close.svg");
-    background-size: 24px 25px; }
+    background-size: 24px 25px;
+    outline: none; }
+    .nav--opened .nav__toggle:focus, .nav--opened .nav__toggle:hover {
+      background-color: #cccccc; }
   .nav--nojs .nav__list {
     display: block; }
   .nav--nojs .nav__toggle {
     background-color: #ffffff;
     background-image: url("../img/icon-menu-close.svg"); }
+    .nav--nojs .nav__toggle:focus, .nav--nojs .nav__toggle:hover {
+      background-color: #cccccc; }
   .nav__item a {
     display: block;
     position: relative;
@@ -489,7 +494,10 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    background-color: #0ad9c6; } }
+    background-color: #0ad9c6;
+    outline: none; }
+    .nav__toggle:focus, .nav__toggle:hover {
+      background-color: #06776d; } }
 
 .hero {
   display: -webkit-box;
@@ -633,7 +641,9 @@ input[type="radio"].visually-hidden {
   height: 48px;
   font: inherit;
   border: 1px solid #c9ccd4;
-  border-radius: 6px; }
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: normal; }
   .form input:hover, .form input:focus {
     background-color: #cccccc; }
 
@@ -655,30 +665,35 @@ input[type="radio"].visually-hidden {
     background-color: #06776d; }
 
 .form input::-webkit-input-placeholder {
+  font: inherit;
   font-size: 15px;
   line-height: 48px;
   color: #1c1c1c;
   opacity: 0.5; }
 
 .form input::-moz-placeholder {
+  font: inherit;
   font-size: 15px;
   line-height: 48px;
   color: #1c1c1c;
   opacity: 0.5; }
 
 .form input:-ms-input-placeholder {
+  font: inherit;
   font-size: 15px;
   line-height: 48px;
   color: #1c1c1c;
   opacity: 0.5; }
 
 .form input::-ms-input-placeholder {
+  font: inherit;
   font-size: 15px;
   line-height: 48px;
   color: #1c1c1c;
   opacity: 0.5; }
 
 .form input::placeholder {
+  font: inherit;
   font-size: 15px;
   line-height: 48px;
   color: #1c1c1c;
@@ -693,13 +708,13 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 4%;
   padding-top: 150px;
-  padding-bottom: 150px; }
+  padding-bottom: 130px; }
 
 .page-main__bicycle-types {
-  padding-bottom: 150px; }
+  padding-bottom: 135px; }
 
 .page-main {
-  margin-bottom: 142px; }
+  margin-bottom: 144px; }
 
 @media (max-width: 1023px) {
   .page-main__about-us {
@@ -708,7 +723,7 @@ input[type="radio"].visually-hidden {
     padding-left: 12%;
     padding-bottom: 26px; }
   .page-main__bicycle-types {
-    padding-bottom: 70px; }
+    padding-bottom: 20px; }
   .page-main {
     margin-bottom: 62px; } }
 
@@ -718,7 +733,7 @@ input[type="radio"].visually-hidden {
     padding-left: 4%;
     padding-bottom: 38px; }
   .page-main__bicycle-types {
-    padding-bottom: 54px; } }
+    padding-bottom: 4px; } }
 
 .about-us {
   text-align: center; }
@@ -753,6 +768,7 @@ input[type="radio"].visually-hidden {
 
 .facts__item {
   width: 22%;
+  margin-bottom: 20px;
   position: relative;
   letter-spacing: -0.5px; }
 
@@ -813,12 +829,15 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
 .bicycle-types__item {
-  max-width: 30%; }
+  max-width: 30%;
+  margin-bottom: 20px; }
 
 .bicycle-types__item:not(:last-child) {
   margin-right: 3%; }
@@ -899,7 +918,8 @@ input[type="radio"].visually-hidden {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .bicycle-types__item {
-    max-width: 45%; }
+    max-width: 45%;
+    margin-bottom: 50px; }
   .bicycle-types__item:not(:last-child) {
     margin-right: 0; }
   .bicycle-types__image-wrapper {
@@ -936,8 +956,8 @@ input[type="radio"].visually-hidden {
     -o-object-position: bottom;
        object-position: bottom; }
   .bicycle-types__item--childrens {
-    padding-top: 50px;
-    margin: auto; } }
+    margin-left: auto;
+    margin-right: auto; } }
 
 @media (max-width: 767px) {
   .bicycle-types__list {
@@ -1108,6 +1128,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1116,6 +1138,7 @@ input[type="radio"].visually-hidden {
 
 .contacts__links-item {
   position: relative;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 22px;
   color: #000000;

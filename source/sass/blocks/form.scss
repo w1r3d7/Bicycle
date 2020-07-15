@@ -7,6 +7,8 @@
   font: inherit;
   border: 1px solid #c9ccd4;
   border-radius: 6px;
+  font-size: 15px;
+  line-height:normal;
 
   &:hover,
   &:focus {
@@ -35,6 +37,7 @@
 }
 
 .form input::placeholder {
+  font: inherit;
   font-size: 15px;
   line-height: 48px;
   color: #1c1c1c;

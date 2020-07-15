@@ -25,11 +25,13 @@
 
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .bicycle-types__item {
   max-width: 30%;
+  margin-bottom: 20px;
 }
 
 .bicycle-types__item:not(:last-child) {
@@ -127,6 +129,7 @@
 
   .bicycle-types__item {
     max-width: 45%;
+    margin-bottom: 50px;
   }
 
   .bicycle-types__item:not(:last-child) {
@@ -183,8 +186,8 @@
   }
 
   .bicycle-types__item--childrens {
-    padding-top: 50px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
