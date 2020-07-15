@@ -440,16 +440,18 @@ input[type="radio"].visually-hidden {
     padding-bottom: 140px; }
   .nav--opened .nav__list {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
-    z-index: 2; }
+    z-index: 5; }
   .nav--opened .nav__toggle {
+    position: fixed;
     background-color: #ffffff;
     background-image: url("../img/icon-menu-close.svg");
     background-size: 24px 25px;
-    outline: none; }
+    outline: none;
+    z-index: 6; }
     .nav--opened .nav__toggle:focus, .nav--opened .nav__toggle:hover {
       background-color: #cccccc; }
   .nav--nojs .nav__list {

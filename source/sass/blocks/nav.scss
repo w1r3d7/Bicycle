@@ -44,18 +44,20 @@
 
   .nav--opened .nav__list {
     display: block;
-    position: absolute;
+    position: fixed;
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
-    z-index: 2;
+    z-index: 5;
   }
 
   .nav--opened .nav__toggle {
+    position: fixed;
     background-color: #ffffff;
     background-image: url("../img/icon-menu-close.svg");
     background-size: 24px 25px;
     outline: none;
+    z-index: 6;
 
     &:focus,
     &:hover {
