@@ -5,11 +5,19 @@
 .nav__list {
   @include ul-reset();
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav__item {
+  &:hover a,
+  &:focus a {
+    opacity: 1;
+  }
 }
 
 .nav__item a {

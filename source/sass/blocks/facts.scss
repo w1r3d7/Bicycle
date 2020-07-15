@@ -2,6 +2,7 @@
   @include ul-reset();
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -27,7 +28,6 @@
 
 @media (max-width: $tablet-width) {
   .facts {
-    flex-wrap: wrap;
     justify-content: space-around;
   }
 
