@@ -3,14 +3,18 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .facts__item {
   width: 22%;
   margin-bottom: 20px;
+  margin-right: 3%;
   position: relative;
   letter-spacing: -0.5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .facts__item-number {
@@ -34,6 +38,7 @@
 
   .facts__item {
     width: 44%;
+    margin-right: 0;
     margin-bottom: 44px;
   }
 }

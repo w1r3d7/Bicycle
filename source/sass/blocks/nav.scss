@@ -6,7 +6,6 @@
   @include ul-reset();
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
@@ -14,6 +13,12 @@
 }
 
 .nav__item {
+  margin-right: 16%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:hover a,
   &:focus a {
     opacity: 1;
@@ -49,6 +54,11 @@
     overflow-y: scroll;
     z-index: 5;
     background-color: #ffffff;
+  }
+
+  .nav--opened .nav__item,
+  .nav--nojs .nav__item {
+    margin-right: 0;
   }
 
   .nav--opened .nav__list {
