@@ -30,7 +30,7 @@
 
 .nav__toggle {
   display: none;
-  z-index: 3;
+  z-index: 6;
 }
 
 @media (max-width: $tablet-width) {
@@ -42,13 +42,20 @@
     padding-bottom: 140px;
   }
 
-  .nav--opened .nav__list {
-    display: block;
+  .nav--opened  .nav__list-wrapper {
+    height: 100vh;
     position: fixed;
     width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff;
+    overflow-y: scroll;
     z-index: 5;
+    background-color: #ffffff;
+  }
+
+  .nav--opened .nav__list {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+
   }
 
   .nav--opened .nav__toggle {

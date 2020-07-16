@@ -426,7 +426,7 @@ input[type="radio"].visually-hidden {
 
 .nav__toggle {
   display: none;
-  z-index: 3; }
+  z-index: 6; }
 
 @media (max-width: 1023px) {
   .nav__list {
@@ -438,13 +438,17 @@ input[type="radio"].visually-hidden {
     padding: 0;
     padding-top: 100px;
     padding-bottom: 140px; }
-  .nav--opened .nav__list {
-    display: block;
+  .nav--opened .nav__list-wrapper {
+    height: 100vh;
     position: fixed;
     width: 100%;
-    min-height: 100vh;
-    background-color: #ffffff;
-    z-index: 5; }
+    overflow-y: scroll;
+    z-index: 5;
+    background-color: #ffffff; }
+  .nav--opened .nav__list {
+    display: block;
+    width: 100%;
+    background-color: #ffffff; }
   .nav--opened .nav__toggle {
     position: fixed;
     background-color: #ffffff;
